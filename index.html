@@ -22,8 +22,13 @@
 <body ng-controller="">
 <div class="header">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo">LOGO</div>
+        <div class="row" style="line-height: 60px;">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
+                <img src="images/logo.png" alt="" class="logo">
+            </div>
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-8">
+                <span class="website-name">SWS Services</span>
+            </div>
         </div>
     </div>
 </div>
@@ -31,7 +36,7 @@
 <div class="border-bottom">
     <div class="container">
         <div class="contact-bar">
-            Phone : 9876543210
+            <i class="fa fa-phone"></i> +91 735-323-3558
         </div>
     </div>
 </div>
@@ -45,7 +50,9 @@
             We are one of the best experts in various services like refrigerator repairs, A/C repairs and other
             electronic devices.
         </div>
-        <button class="btn btn-primary center-block btn-booknow">Book Now</button>
+        <a href="#form">
+            <button class="btn btn-primary center-block btn-booknow">Book Now</button>
+        </a>
     </div>
 </div>
 
@@ -127,8 +134,29 @@
     </div>
 </div>
 
-<div class="form">
-
+<div class="form" id="form">
+    <div class="form-heading">Schedule your service</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-push-3">
+                <input type="text" class="input-text" placeholder="Your Name">
+                <input type="text" class="input-text" placeholder="Phone">
+                <select name="" id="" class="input-select">
+                    <option value="" disabled="disabled" selected>Your City</option>
+                    <option value="">Pune</option>
+                </select>
+                <select name="" id="" class="input-select">
+                    <option value="" disabled="disabled" selected>Service Needed</option>
+                    <option value="">A/C Repair</option>
+                    <option value="">Refrigerator Repair</option>
+                    <option value="">Washing Machine Repair</option>
+                    <option value="">Gyser Repair</option>
+                    <option value="">Gas Stove Repair</option>
+                </select>
+                <button class="input-text submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="footer">
